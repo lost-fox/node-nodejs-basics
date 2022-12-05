@@ -1,6 +1,6 @@
 import fs from 'fs';
 const create = async () => {
-    const path = 'files/fresh.txt';
+    const path = './src/fs/files/fresh.txt';
     const text = 'I am fresh and young';
     fs.stat(path, (err) => {
         if (err == null) {

@@ -1,6 +1,6 @@
 import fs from 'fs';
 const remove = async () => {
-    const removeFile = './files/fileToRemove.txt';
+    const removeFile = './src/fs/files/fileToRemove.txt';
     fs.stat(removeFile, (err) => {
         if (!err) {
             fs.unlink(removeFile, (err) => {

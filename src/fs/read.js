@@ -1,6 +1,6 @@
 import fs from 'fs';
 const read = async () => {
-    const readPath = './files/fileToRead.txt';
+    const readPath = './src/fs/files/fileToRead.txt';
     fs.stat(readPath, (err) => {
         if (!err) {
             fs.readFile(readPath, 'utf-8', (err, data) => {
